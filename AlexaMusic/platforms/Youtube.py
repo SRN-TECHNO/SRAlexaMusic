@@ -489,3 +489,9 @@ class KSKOP:
             downloaded_file = response.get("audioStreams", [])[4]["url"]
 
         return downloaded_file, direct
+        from pytube import YouTube
+
+cookies = {
+    'COOKIE_NAME': 'AFmmF2swRQIhAKld_SFNsy3be_oD_z5axffeGq0jt3S7ZxD9mCwT2fzGAiBOEJR9Hzod0q_DoFxT4A5Lb8RP1ZZrOD4Bnrc_S270eg:QUQ3MjNmeTEyTmU5Q09VUmFhcGpwamNsVXV2OWVMOUkyblFFaldsdHQ5ZHpENF9PMU0ySnJHZzAzdWtQTHJPNXBxQXdMZnd4MEpsWTlJaTg3UHk4enlSMTczY1QxazBzazlvaXJ5MEV6MElLWk5GNkNCSFNMaG1QMnNMTXI0M1lMN2gyM29xMTJRNFpYZEM1UzYzQnEwWVhXVDZucHpIRGZB',}
+
+yt = YouTube('https://www.youtube.com/watch?v=MnGAYS-v7lQ', cookies=cookies)
